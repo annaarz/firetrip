@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display;
+}
+
+.block {
+    max-width: 342px;
+    margin-bottom: 20px;
+}
+
+.hotels__blocks :last-child {
+    margin-bottom: 0px;
+}
+
+.hotel {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.hotel__img {
+    width: 342px;
+    height: 174px;
+    border-radius: 10px;
+}
+
+.fav {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.fav .fav__fa {
+    position: absolute;
+    right: -200px;
+}
+
+.fav__stars {
+    color: #FFF500;
+}
+
+.info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.more-info__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more-info__txt {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.price {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__for-two {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.price__txt {
+    color: #717171;
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+.main-p {
+    margin: 45px 136px 8px 137px;
+    padding: 11px 14px;
+    width: 102px;
+    background-color: gainsboro;
+    border-radius: 17px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+.hotel1 img{
+    margin-left: 20px;
+}
+
+.hotel2 img{
+    margin-left: 20px;
+}
+
+.hotel:hover {
+    cursor: pointer;
+}
+
+.nav {
+    width: 375px;
+    height: 100px;
+    padding: 8px 38px 40px 34px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #dfdfdf;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navList {
+    display: flex;
+    justify-content: space-between;
+    width: 303px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 200%;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #757575;
+}
+
+.info__name {
+margin-left: 20px;
+}
+
+.info__txt {
+margin-left: 20px;
+}
+
+.SelectTour {
+    width: 343px;
+    height: 40px;
+    padding: 9px 113px 7px 116px;
+    background-color: #2C4E87;
+    margin: 31px 16px 45px 16px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hotToures-p {
+    width: 143px;
+    height: 27px;
+    margin: 0 116px 23px 116px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+}
+
+
+/* .marmaris {
+    margin: 0 17px 12px 16px;
+} */
+
+.characteristics {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 341px;
+    height: 37px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.char-img {
+    height: 20px;
+}
+
+.navImages {
+    height: 22px;
+}
+
+.hotel2 {
+    margin-top: 20px;
+    margin-bottom: 115px;
+    position: relative;
+}
+
+.price1 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    margin-right: 13px;
+}
+
+.hotel1 {
+    position: relative;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 14px;
+    color: #717171;
+}
+
+.price {
+    display: flex;
+    width: 148px;
+    height: 19px;
+    margin: 16px 0 20px 17px;
+}
+
+.fav {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.fav .fav__fa {
+    position: absolute;
+    right: -200px;
+}
+
+.fav__stars {
+    color: #FFF500;
+    margin-left: 20px;
+}
+
+.info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.more-info__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more-info__txt {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.navLinks a {
+    display: block;
+    text-decoration: none;
+    color: #757575;
+}
+
+.main a {
+    display: block;
+    text-decoration: none;
+}
+
+.info1 {
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
