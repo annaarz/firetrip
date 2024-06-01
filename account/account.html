@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккаунт</title>
+    <link rel="stylesheet" href="./account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="./js.js" defer></script>
+</head>
+<body>
+    <div class="container-f">
+    <div class="nav">
+        <div class="navList">
+            <div class="navLinks">
+                <a href="../tours/tour/tour.html">
+                    <img class="navImages" src="./img/toures.png" alt="toures">
+                    <p>Туры</p>
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="../fire-tours/firetours.html">
+                    <img class="navImages" src="./img/hotToures.png" alt="hotToures">
+                    <p>Горячие туры</p>
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="../favorites/favorites.html">
+                    <img class="navImages" src="./img/favourites.png" alt="favourites">
+                    <p>Избранное</p>
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="#">
+                    <img class="navImages" src="./img/User.png" alt="account">
+                    <p>Аккаунт</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <form>
+        <div class="container">
+            <div class="name">
+                <p>Фамилия</p>
+                <input type="text">
+            </div>
+            <div class="name">
+                <p>Имя</p>
+                <input type="text">
+            </div>
+            <div class="name">
+                <p>Отчество</p>
+                <input type="text">
+            </div>
+            <div class="name">
+                <p>Дата рождения</p>
+            </div>
+            <div>
+                <select name="day" class="day">
+                    <option value="" hidden>День</option>
+
+                </select>
+                <select name="month" class="month">
+                    <option value="" hidden>Месяц</option>
+
+                </select>
+                <select name="year" class="year">
+                    <option value="" hidden>Год</option>
+
+                </select>
+            </div>
+            <a href="#"><div class="save"><p>Сохранить</p></div></a>
+        </div>
+    </form>
+</div>
+<div class="last-tours">
+    <p>История туров</p>
+    
+</div>
+</body>
+</html>
