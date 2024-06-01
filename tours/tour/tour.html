@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор тура</title>
+    <link rel="stylesheet" href="./tour.css">
+    <script src="./tour.js" defer></script>
+    <script src="https://kit.fontawesome.com/3249d5b6dc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="cont2">
+        <div class="head">
+            <img class="back" src="../images/back.svg" alt="back">
+            <h2 class="tour">Туры</h2>
+        </div>
+        <h1 id="searchtour">Подбор тура</h1>
+        <div class="pozvonit" id="open-modal">
+            <a class="tel" href="tel:+375297786812">Позвонить</a>
+            <img src="../images/tel.svg" alt="phone">
+        </div>
+        <div class="modal" id="mymodal">
+            <div class="modal_box">
+                <button class="modal_close" id="close">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+                    </svg>
+                </button>
+                <div class="numbers">
+                    <div class="num">
+                        <div><img src="../images/mts-logo.svg" alt=""></div>
+                        <a href="tel:+375291111111">+375 29 111-11-11</a>
+                    </div>
+                    <div class="num">
+                        <div><img src="../images/life-logo.svg" alt=""></div>
+                        <a href="tel:+375291111111">+375 29 111-11-11</a>
+                    </div>
+                    <div class="num">
+                        <div><img src="../images/a1-logo.svg" alt=""></div>
+                        <a href="tel:+375291111111">+375 29 111-11-11</a>
+                    </div>
+                    <p>
+                    <p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="select">
+            <select name="city">
+                <option value="" hidden>откуда</option>
+                <option value="1">Минск</option>
+                <option value="2">Москва</option>
+                <option value="3">Санкт-Петербург</option>
+                <option value="4">Казань</option>
+                <option value="5">Татарстан</option>
+            </select>
+            <select name="city">
+                <option value="" hidden>куда</option>
+                <option value="1">Турция</option>
+                <option value="2">Болгария</option>
+                <option value="3">Египет</option>
+                <option value="4">Испания</option>
+                <option value="5">Италия</option>
+            </select>
+            <select name="num">
+                <option value="" hidden>количество ночей</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select name="num">
+                <option value="" hidden>количество взрослых</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select name="num">
+                <option value="" hidden>количество детей</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <p>Стоимость</p>
+        <div class="slider">
+            <div class="progress"></div>
+        </div>
+        <div class="range-input">
+            <input type="range" class="range-min" min="0" max="2000" value="500" step="10">
+            <input type="range" class="range-max" min="0" max="2000" value="1500" step="10">
+        </div>
+        <div class="price-input">
+            <div class="field">
+                <span>от</span>
+                <input type="number" class="input-min" value="500">
+                <span>бел.руб</span>
+            </div>
+            <div class="field">
+                <span>до</span>
+                <input type="number" class="input-max" value="1500">
+                <span>бел.руб</span>
+            </div>
+        </div>
+        <button class="choosetour">Подобрать тур</button>
+        <div class="incost">
+            <h2>В стоимость входит:</h2>
+            <ul class="bonus">
+                <li>транспортные билеты</li>
+                <li>проживание в отеле</li>
+            </ul>
+        </div>  
+        <div class="variant">
+            <h2 class=>Подходящие варианты</h2>
+            <a href="#searchtour"><img class="set" src="../images/set.svg" alt="set"></a> 
+        </div>
+        <div class="block">
+            <div class="block__hotel hotel">
+                <img class="hotel__img hotel1" src="../images/hotel1.png" alt="">
+                <div class="hotel__fav fav">
+                    <div class="fav__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <i class="fa-regular fa-heart fav__fa"></i>
+                </div>
+    
+                <div class="hotel__info info">
+                    <h4 class="info__name">Ince Aparts</h4>
+                    <p class="info__txt">Мармарис, Турция</p>
+                </div>
+            </div>
+    
+            <div class="block__more-info more-info">
+                <div class="more-info__item">
+                    <img src="../images/SwimmingPool.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">3 линия</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/Park.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">пес/гал.</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/Signpost.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">до пляжа</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/AirplaneInFlight.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">103 км</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/WifiHigh.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">везде</p>
+                </div>
+            </div>
+            <div class="block__price price">
+                <p class="price__for-two">1990 бел.руб.</p>
+                <p class="price__txt">за 2-х</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__hotel hotel">
+                <img class="hotel__img hotel2" src="../images/hotel2.png" alt="">
+                <div class="hotel__fav fav">
+                    <div class="fav__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star gray"></i>
+                        <i class="fa-solid fa-star gray"></i>
+                    </div>
+                    <i class="fa-regular fa-heart fav__fa"></i>
+                </div>
+    
+                <div class="hotel__info info">
+                    <h4 class="info__name">Ince Aparts</h4>
+                    <p class="info__txt">Мармарис, Турция</p>
+                </div>
+            </div>
+    
+            <div class="block__more-info more-info">
+                <div class="more-info__item">
+                    <img src="../images/SwimmingPool.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">3 линия</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/Park.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">пес/гал.</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/Signpost.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">до пляжа</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/AirplaneInFlight.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">103 км</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/WifiHigh.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">везде</p>
+                </div>
+            </div>
+            <div class="block__price price">
+                <p class="price__for-two">1990 бел.руб.</p>
+                <p class="price__txt">за 2-х</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__hotel hotel">
+                <img class="hotel__img hotel3" src="../images/hotel3.png" alt="">
+                <div class="hotel__fav fav">
+                    <div class="fav__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star gray"></i>
+                    </div>
+                    <i class="fa-regular fa-heart fav__fa"></i>
+                </div>
+    
+                <div class="hotel__info info">
+                    <h4 class="info__name">Ince Aparts</h4>
+                    <p class="info__txt">Мармарис, Турция</p>
+                </div>
+            </div>
+    
+            <div class="block__more-info more-info">
+                <div class="more-info__item">
+                    <img src="../images/SwimmingPool.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">3 линия</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/Park.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">пес/гал.</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/Signpost.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">до пляжа</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/AirplaneInFlight.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">103 км</p>
+                </div>
+    
+                <div class="more-info__item">
+                    <img src="../images/WifiHigh.svg" alt="" class="more-info__img">
+                    <p class="more-info__txt">везде</p>
+                </div>
+            </div>
+            <div class="block__price price">
+                <p class="price__for-two">1990 бел.руб.</p>
+                <p class="price__txt">за 2-х</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navList">
+            <div class="navLinks">
+                <a href="#">
+                    <img class="navImages" src="../images/toures.png" alt="toures">
+                    <p class="nav-links-f">Туры</p>
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="../../fire-tours/firetours.html">
+                    <img class="navImages" src="../images/hotToures.png" alt="hotToures">
+                    <p class="nav-links-f">Горячие туры</p>
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="../../favorites/favorites.html">
+                    <img class="navImages" src="../images/favourites.png" alt="favourites">
+                    <p class="nav-links-f">Избранное</p>
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="../../account/account.html">
+                    <img class="navImages" src="../images/account.png" alt="account">
+                    <p class="nav-links-f">Аккаунт</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
