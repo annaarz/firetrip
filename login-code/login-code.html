@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код</title>
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img src="../img/logo.svg" alt="logo" class="logo">
+        <div class="reg-code-container">
+            <h1>Вход</h1>
+            <h2>Введите код, который пришёл на Ваш e-mail/номер телефона</h2>
+            <form class="reg-code-form">
+                <div class="otp-bx">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <div class="repeat-code"><a href="#">Отправить код еще раз</a></div>
+                <button type="submit" class="submit-btn">Далее</button>
+            </form>
+            
+        </div>
+
+        <div class="modal">
+            <div class="modal-window">
+                <h1>Неверный код,<br>попробуйте снова...</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

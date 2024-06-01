@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #2e2e2e;
+    font-family: "Playfair Display", serif;
+}
+
+.container {
+    width: 375px;
+    height: 812px;
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-top: 44px;
+    margin-left: 16px;
+}
+
+.greeting {
+    font-size: 25px;
+    margin-top: 32px;
+    margin-left: 23px;
+}
+
+.reg-code-container {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.reg-code-container h1 {
+    margin-top: 8px;
+    font-size: 25px; 
+}
+
+.reg-code-container h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    color: #161616;
+
+}
+
+.submit-btn {
+    width: 345px;
+    height: 40px;
+    background-color: #2C4E87;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.reg-code-container a {
+    text-decoration: none;
+    color: #2C4E87;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.repeat-code {
+    margin-top: 20px;
+}
+
+
+.otp-bx {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.otp-bx input{
+    width: 50px;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    border: 2px solid #55525c;
+    background-color: transparent;
+    font-weight: bold;
+    color: #2C4E87;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.otp-bx input:focus {
+    border: 2px solid #20375f;
+    box-shadow: 0 0 2px 2px ;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 675px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal h1 {
+    font-size: 18px;
+    text-align: center;
+    color: #6e3c3f;
+}
+
+.modal-window {
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    background: #fff6f5;
+    border: 3px #cebbbc dotted;
+}

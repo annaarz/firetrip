@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2e2e;
+    font-family: "Playfair Display", serif;
+}
+
+.container {
+    width: 375px;
+    height: 812px;
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-top: 44px;
+    margin-left: 16px;
+}
+
+.greeting {
+    font-size: 25px;
+    margin-top: 32px;
+    margin-left: 23px;
+}
+
+.reg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+}
+
+.reg-container h2 {
+    margin-top: 8px;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.reg-form input {
+    margin-bottom: 20px;
+    width: 344px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px black solid;
+    font-family: "Playfair Display", serif;
+    padding-left: 11px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6E6E6E;
+}
+
+.submit-btn {
+    width: 345px;
+    height: 40px;
+    background-color: #2C4E87;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.login-link {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.login-link a {
+    color: #2C4E87;
+    text-decoration: none;
+}
+
+.forgot-pass {
+    font-size: 15px;
+    text-align: end;
+}
+
+.forgot-pass a {
+    color: #2C4E87;
+    text-decoration: none;
+}
+
+.submit-btn a {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 640px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+.modal.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.8s;
+}
+
+.modal h1 {
+    font-size: 17px;
+    text-align: center;
+    color: #6e3c3f;
+    font-weight: 500;
+}
+
+.modal-window {
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    margin: auto;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    background: #fff6f5;
+    border: 3px #cebbbc dotted;
+}
