@@ -1,0 +1,154 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #ffffff;
+}
+
+.gray {
+    color: rgb(193, 188, 188);
+}
+
+.back {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.back:hover {
+    cursor: pointer;
+}
+
+.accordion {
+    background-color: rgb(255, 255, 255);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #eee;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 375px;
+    margin: auto;
+    max-height: 835px;
+}
+
+.accordion:last-of-type {
+    border-bottom: 1px solid #eee;
+}
+
+.active,
+.accordion:hover {
+    background-color: #eee;
+}
+
+.accordion:after {
+    content: '\2228';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2227';
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.block-hotel {
+    max-width: 342px;
+    margin: 40px 16px 20px 16px;
+}
+
+.hotels__blocks :last-child {
+    margin-bottom: 0px;
+}
+
+.hotel {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.hotel__img {
+    width: 342px;
+    height: 174px;
+    border-radius: 10px;
+}
+
+.fav {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.fav .fav__fa {
+    position: absolute;
+    right: -200px;
+}
+
+.fav__stars {
+    color: #FFF500;
+}
+
+.hotel-element {
+    width: 311px;
+    height: 181px;
+    margin-top: 10px;
+    margin-right: 32px;
+}
+
+
+.hotel-element-div h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.hotel-element-div {
+    display: flex;
+    flex-direction: flex;
+    margin-bottom: 15px;
+}
+
+.hotel-element-div:last-child {
+    margin-bottom: 0px;
+}
+
+.hotel-element-div p {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.hotel-element-img {
+    height: 34px;
+    width: 34px;
+    margin-right: 10px;
+}
+
+.a4 {
+    font-weight: 400;
+    font-size: 10px;
+    color: #3882c7;
+}
+
+.a4div {
+    margin: 15px 0 30px 0;
+}
