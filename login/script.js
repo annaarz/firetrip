@@ -27,7 +27,7 @@ submitBtn.addEventListener('click', (e) => {
 
     const foundUser = users.find(user => user.email === enteredEmail && user.password === enteredPassword);
     if (foundUser) {
-        window.location.href = "../login-code/login-code.html";
+        window.location.href = "https://annaarz.github.io/firetrip/login-code/login-code.html";
     } else {
         showModal('Неверный email или пароль');
     }
