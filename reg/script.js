@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const existingUser = users.find(user => user.email === enteredEmail);
         if (existingUser) {
-            modalWindow.style.paddingTop = "0px";
+            modalWindow.style.paddingTop = "10px";
             showModal('Пользователь с таким email уже зарегистрирован');
             return;
         }
