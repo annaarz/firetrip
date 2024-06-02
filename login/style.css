@@ -114,7 +114,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    top: 640px;
+    top: 650px;
     left: 0;
     height: 100%;
     width: 100%;
