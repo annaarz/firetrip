@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         users.push(newUser);
         console.log('Регистрация прошла успешно. Новый пользователь добавлен:', newUser);
-        window.location.href = "../reg-code/reg-code.html";
+        window.location.href = "https://annaarz.github.io/firetrip/reg-code/reg-code.html";
         localStorage.users = JSON.stringify(users);
     });
 
