@@ -17,17 +17,17 @@ for (let i = 0; i < heard.length; i++) {
 hotels.forEach(hotel => {
     hotel.addEventListener("click", (e) => {
         if (e.target.classList.contains("hotel1")) {
-            window.location.href = "../../hotel/hotel1/hotel.html";
+            window.location.href = "https://annaarz.github.io/firetrip/hotel/hotel1/hotel.html";
         } else if(e.target.classList.contains("hotel2")) {
-            window.location.href = "../../hotel/hotel2/hotel2.html";
+            window.location.href = "https://annaarz.github.io/firetrip/hotel/hotel2/hotel2.html";
         } else if (e.target.classList.contains("hotel3")) {
-            window.location.href = "../../hotel/hotel3/hotel3.html";
+            window.location.href = "https://annaarz.github.io/firetrip/hotel/hotel3/hotel3.html";
         } else if (e.target.classList.contains("hotel4")) {
-            window.location.href = "../../hotel/hotel4/hotel4.html";
+            window.location.href = "https://annaarz.github.io/firetrip/hotel/hotel4/hotel4.html";
         }
     });
 });
 
 back.addEventListener("click", () => {
-    window.location.href = "../../main/main.html";
+    window.location.href = "https://annaarz.github.io/firetrip/main/main.html";
   })
