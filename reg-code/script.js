@@ -39,7 +39,7 @@ function submit() {
   });
 
   if (otp == "7878") {
-    window.location.href = "../main/main.html";
+    window.location.href = "https://annaarz.github.io/firetrip/main/main.html";
   } else {
     modal.style.display = 'block';
     document.addEventListener('click', function(event) {
